@@ -13,6 +13,9 @@
     "test:run": "cypress run",
     "test:ci": "concurrently -r -k -s first \"npm run test:start\" \"npm run test:run\""
   },
+  "cypress-cucumber-preprocessor": {
+      "step_definitions": "cypress/step_definitions"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.13",
